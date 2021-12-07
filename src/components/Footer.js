@@ -8,7 +8,6 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import { a } from "react-router-dom";
 
 function Footer() {
   return (

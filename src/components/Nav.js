@@ -15,15 +15,15 @@ function Nav() {
     <div>
       <nav>
         <div className="logo">
-          <NavLink to="/projekty/u_krvaveho_barona" onClick={closeMobileMenu}>
-            <img src="/projekty/u_krvaveho_barona/images/logo.png" alt="logo" />
+          <NavLink to="/" onClick={closeMobileMenu}>
+            <img src="/images/logo.png" alt="logo" />
           </NavLink>
         </div>
         <ul className={click ? "navbar active" : "navbar"}>
           <li>
             <NavLink
               exact
-              to="/projekty/u_krvaveho_barona/denni_menu"
+              to="/denni_menu"
               activeClassName="active"
               onClick={closeMobileMenu}
             >
@@ -33,7 +33,7 @@ function Nav() {
           <li>
             <NavLink
               exact
-              to="/projekty/u_krvaveho_barona/stala_nabidka"
+              to="/stala_nabidka"
               activeClassName="active"
               onClick={closeMobileMenu}
             >
@@ -43,7 +43,7 @@ function Nav() {
           <li>
             <NavLink
               exact
-              to="/projekty/u_krvaveho_barona/o_nas"
+              to="/o_nas"
               activeClassName="active"
               onClick={closeMobileMenu}
             >
@@ -53,7 +53,7 @@ function Nav() {
           <li>
             <NavLink
               exact
-              to="/projekty/u_krvaveho_barona/kontakt"
+              to="/kontakt"
               activeClassName="active"
               onClick={closeMobileMenu}
             >

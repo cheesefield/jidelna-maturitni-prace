@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 // components
 import Nav from "./components/Nav";
@@ -16,23 +16,13 @@ function App() {
     <div className="App">
       <Router>
         <Nav />
-        <Switch>
-          <Route exact path="/projekty/u_krvaveho_barona">
-            <Domu />
-          </Route>
-          <Route exact path="/projekty/u_krvaveho_barona/denni_menu">
-            <DenniMenu />
-          </Route>
-          <Route exact path="/projekty/u_krvaveho_barona/stala_nabidka">
-            <StalaNabidka />
-          </Route>
-          <Route exact path="/projekty/u_krvaveho_barona/o_nas">
-            <ONas />
-          </Route>
-          <Route exact path="/projekty/u_krvaveho_barona/kontakt">
-            <Kontakt />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Domu />} />
+          <Route path="/denni_menu" element={<DenniMenu />} />
+          <Route path="/stala_nabidka" element={<StalaNabidka />} />
+          <Route path="/o_nas" element={<ONas />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+        </Routes>
         <Footer />
       </Router>
     </div>
