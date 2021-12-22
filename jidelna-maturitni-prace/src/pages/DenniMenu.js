@@ -20,12 +20,7 @@ function DenniMenu() {
       </Helmet>
       <main>
         <h1>Denní menu</h1>
-        <p>1. Svíčková omáčka s knedlíkem Cena: 105,-Kč</p>
-        <p>2. Knedl, vepřo, zelo Cena: 100,-Kč</p>
-        <p>3. Borůvkové knedlíky Cena: 70,-Kč</p>
-        <p>4. Rajská omáčka s knedlíkem Cena: 115,-Kč</p>
-        <p>5. Zeleninové rizoto Cena: 60,-Kč</p>
-        <p>6. Špagety s boloňskou omáčkou Cena: 75,-Kč</p>
+        <Table list={list} colNames={colNames} />
       </main>
     </div>
   );

@@ -9,7 +9,13 @@ function Kontakt() {
         <title>Kontakt - U Krvavého barona</title>
       </Helmet>
       <main>
-        <h1>Kontakt</h1>
+        <h1>Kde nás najdete?</h1>
+        <p>
+          Najdete nás na Vaškovo nám. 2052 hned vedle policejní stanice, také
+          nás najdete na našem facebooku, instagramu nebo twitteru, kde neustále
+          přidáváme aktualní jídelní lístky, změny v otevirácí době a různé
+          akce, které momentálně probíhají.
+        </p>
       </main>
     </div>
   );
