@@ -183,10 +183,14 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
 }
+main p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 40px;
+}
 footer {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  bottom: 0;
   text-align: center;
   background-color: #333;
 }

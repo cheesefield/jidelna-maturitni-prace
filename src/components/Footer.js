@@ -53,9 +53,7 @@ function Footer() {
             </div>
           </a>
         </div>
-        <p>
-          Designed by <b>CheeseField</b>
-        </p>
+        <p>Copyright &copy; 2022 Dominik Sikora</p>
       </footer>
     </div>
   );
