@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Svíčková omáčka s knedlíky a brusinkami",
+    "price": "189,-"
+  },
+  { "id": 2, "name": "Špagety Carbonara", "price": "170-" },
+  { "id": 3, "name": "Knedlo, vepřo, zelo", "price": "159,-" },
+  { "id": 4, "name": "Těstovinový salát s tuňákem", "price": "185,-" },
+  { "id": 5, "name": "Bramborové knedlíky plněné jahodami", "price": "145,-" },
+  { "id": 6, "name": "Rybí filé s bramborovou kaší", "price": "135,-" }
+]
