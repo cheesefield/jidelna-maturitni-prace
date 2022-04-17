@@ -194,11 +194,78 @@ main p {
   margin: 0 40px;
 }
 
+main #images {
+  width: 100%;
+  display: grid;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+main #images .container {
+  position: relative;
+}
+
+main #images .container img {
+  width: 100%;
+  display: block;
+}
+
+main #images .container h3 {
+  display: flex;
+  justify-content: center;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+}
+
 main .form {
   width: 70vw;
   top: 0;
   left: 0;
   margin: 0 auto;
+}
+
+main #submit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  color: #333;
+  background-color: #aaa;
+  border-radius: 15px;
+  border: solid;
+  height: 170px;
+  width: 330px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+main #submit .text {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+main #submit.active {
+  opacity: 1;
+}
+
+main #submit button {
+  width: fit-content;
+  background-color: #333;
+}
+
+main #submit button:hover {
+  background-color: #111;
 }
 
 main table {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import OteviraciDoba from "../data/oteviraci_doba.json";
 import "../App.css";
 
 function Domu() {
@@ -10,13 +11,24 @@ function Domu() {
       </Helmet>
       <main>
         <h2>Otevírací doba</h2>
-        <p>Pondělí: 9-22</p>
-        <p>Úterý: 9-22</p>
-        <p>Středa: 9-22</p>
-        <p>Čtvrtek: 9-22</p>
-        <p>Pátek: 9-1</p>
-        <p>Sobota: 9-1</p>
-        <p>Neděle: 9-23</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Den</th>
+              <th>Čas</th>
+            </tr>
+          </thead>
+          {OteviraciDoba.map((otevreno, index) => {
+            return (
+              <tbody>
+                <tr>
+                  <th>{otevreno.day}</th>
+                  <th>{otevreno.time}</th>
+                </tr>
+              </tbody>
+            );
+          })}
+        </table>
         <h2>Rozvoz jídel</h2>
         <p>
           Pokud si chcete objednat jídlo z pohodlí Vašeho domova, zavolejte na
