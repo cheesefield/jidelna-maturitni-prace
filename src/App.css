@@ -230,6 +230,7 @@ main .form {
 }
 
 main #submit {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -257,6 +258,7 @@ main #submit .text {
 
 main #submit.active {
   opacity: 1;
+  display: block;
 }
 
 main #submit button {
