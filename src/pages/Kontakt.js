@@ -24,11 +24,15 @@ function Kontakt() {
     setNazor({ jmeno: "", prijmeni: "", email: "", obsah: "" });
     toggleClass();
   }
+  async function createOdber() {
+    await supabase.from("odber").insert([{ email_odber }]).single();
+    setOdber({ email_odber: "" });
+    toggleClass();
+  }
   const [isActive, setActive] = useState(false);
 
   const toggleClass = () => {
     isActive ? setActive(false) : setActive(true);
-    console.log(toggleClass);
   };
   return (
     <div className="App">
@@ -113,29 +117,29 @@ function Kontakt() {
           <div className="button">
             <button onClick={createNazor}>Odeslat</button>
           </div>
-          <div className="form">
-            <h2>Odběr jídelních lístků</h2>
-            <input
-              type="text"
-              id="email_odber"
-              name="email_odber"
-              placeholder="Zadejte mail:"
-              value={email_odber}
-              className="odber"
-              required
-              onChange={(e) =>
-                setOdber({ ...odber, email_odber: e.target.value })
-              }
-            />
-            <div className="button">
-              <button onClick={createOdber}>Přihlásit se k odběru</button>
-            </div>
+        </div>
+        <div className="form">
+          <h2>Odběr jídelních lístků</h2>
+          <input
+            type="text"
+            id="email_odber"
+            name="email_odber"
+            placeholder="Zadejte mail:"
+            value={email_odber}
+            className="odber"
+            required
+            onChange={(e) =>
+              setOdber({ ...odber, email_odber: e.target.value })
+            }
+          />
+          <div className="button">
+            <button onClick={createOdber}>Přihlásit se k odběru</button>
           </div>
-          <div id="submit" className={isActive ? "active" : null}>
-            <div className="text">
-              <h2>Formulář byl odeslán, děkujeme.</h2>
-              <button onClick={toggleClass}>Ok</button>
-            </div>
+        </div>
+        <div id="submit" className={isActive ? "active" : null}>
+          <div className="text">
+            <h2>Formulář byl odeslán, děkujeme.</h2>
+            <button onClick={toggleClass}>Ok</button>
           </div>
         </div>
       </main>
