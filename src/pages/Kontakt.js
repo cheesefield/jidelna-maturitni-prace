@@ -109,6 +109,23 @@ function Kontakt() {
           <div className="button">
             <button onClick={createNazor}>Odeslat</button>
           </div>
+          <div className="form">
+            <h2>Odběr jídelních lístků</h2>
+            <input
+              type="text"
+              id="email_odber"
+              name="email_odber"
+              placeholder="Zadejte mail:"
+              value={email_odber}
+              className="odber"
+              onChange={(e) =>
+                setOdber({ ...odber, email_odber: e.target.value })
+              }
+            />
+            <div className="button">
+              <button onClick={createOdber}>Přihlásit se k odběru</button>
+            </div>
+          </div>
           <div id="submit" className={isActive ? "active" : null}>
             <div className="text">
               <h2>Formulář byl odeslán, děkujeme.</h2>
