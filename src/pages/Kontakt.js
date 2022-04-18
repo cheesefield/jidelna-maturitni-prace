@@ -56,6 +56,7 @@ function Kontakt() {
                 name="jmeno"
                 placeholder="Jméno"
                 value={jmeno}
+                required
                 onChange={(e) => setNazor({ ...nazor, jmeno: e.target.value })}
               />
             </div>
@@ -71,6 +72,7 @@ function Kontakt() {
                 name="prijmeni"
                 placeholder="Příjmení"
                 value={prijmeni}
+                required
                 onChange={(e) =>
                   setNazor({ ...nazor, prijmeni: e.target.value })
                 }
@@ -88,6 +90,7 @@ function Kontakt() {
                 name="email"
                 placeholder="Email"
                 value={email}
+                required
                 onChange={(e) => setNazor({ ...nazor, email: e.target.value })}
               />
             </div>
@@ -102,6 +105,7 @@ function Kontakt() {
                 name="obsah"
                 placeholder="Napište Nám"
                 value={obsah}
+                required
                 onChange={(e) => setNazor({ ...nazor, obsah: e.target.value })}
               ></textarea>
             </div>
@@ -118,6 +122,7 @@ function Kontakt() {
               placeholder="Zadejte mail:"
               value={email_odber}
               className="odber"
+              required
               onChange={(e) =>
                 setOdber({ ...odber, email_odber: e.target.value })
               }
