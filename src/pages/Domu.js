@@ -10,6 +10,7 @@ function Domu() {
         <title>U Krvavého barona</title>
       </Helmet>
       <main>
+        <h1>U Krvavého barona</h1>
         <h2>Otevírací doba</h2>
         <table>
           <thead>
